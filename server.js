@@ -35,7 +35,7 @@ io.on('connection', (socket) => {
     
 const dbconfig = {
     
-        server: "DESKTOP-F31R5MH",
+        server: "DESKTOP-079SVH5",
         user: "sa",
         password: "12345",
         database: "webchat",
