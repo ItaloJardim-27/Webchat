@@ -1,0 +1,171 @@
+
+*:not(.rooms){
+    margin: 0 auto;
+}
+.allChat, .signUp, .allroom{
+    display: none;
+}
+.login {
+    text-align: center;
+}
+.signUp{
+    text-align: center;
+}
+.loginBox, .signUpBox {
+    width: 40%;
+    background-color: rgb(223, 223, 223); 
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    display: inline-block;
+}
+.loginBox{
+    height:42vw;
+}
+.signUpBox{
+    height: 60vw;
+}
+.formTop{
+    text-align: left;
+}
+.btnLogin {
+    height: 4vw;
+    font-size: 2vw;
+    margin-top: 7vw;
+    width: 15vw;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.signUpA{
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.lblForm {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vw;
+    margin-left: 2vw;
+}
+.inputForm {
+    font-size: 2vw;
+}
+body{
+   background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,0,113,1) 36%, rgba(18,18,149,1) 55%, rgba(5,129,154,1) 100%);
+}
+.room{
+    height: 60vw;
+}
+.roomBoxParent {
+    display: flex;
+    width: 90%;
+    margin-top: 10vw;
+}
+.userDiv{
+    text-align: center;
+    margin-top: 5vw;
+}
+.roomBox{
+    height: 25vw;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    width: 25vw;
+    box-shadow: 1px 9px 16px 8px rgba(0,0,0,0.81);
+}
+.welcome {
+    font-size: 4vw;
+    background-color: rgba(20, 20, 20, 0.555);
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin-top: 3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.roomBoxTop{
+    height: 5vw;
+    border-bottom: solid 2px black;
+}
+.roomBoxBottom {
+    height: 10vw;
+}
+
+.rooms{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    border: solid black;
+    background-color: black;
+    margin-top: 2vw;
+    font-size: 3vw;
+    translate: 50%;
+}
+.roomName{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size: 3vw;
+}
+.user {
+    width: 55vw;
+    height: 5vw;
+    font-size: 2vw;
+    text-align: center;
+}
+.user::placeholder{
+    font-size: 2vw;
+}
+.chat::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  
+   
+  /* Handle */
+.chat::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+@media only screen and (max-width:600px){ 
+    .room{
+        height: 80vw;
+        display: inline-block;
+        width: 100%;
+    }
+    .roomBoxParent{
+        margin-top: 30vw;
+        width: 100%;
+    }
+    .roomBox {
+        height: 80vw;
+        width: 40vw;
+        margin: 2vw;
+    }
+    .roomBoxTop{
+        height: 40%;
+    }
+    .roomName {
+        margin-top: 10vw;
+        font-size: 5vw;
+    }
+  .rooms{
+    margin-top: 10vw;
+    font-size: 5vw;
+  }  
+  .userDiv{
+    width: 100%;
+  }
+  .user{
+    height: 15vw;
+    font-size: 5vw;
+    width: 80%;
+    margin-top: 10vw;
+  }
+  .user::placeholder{
+    font-size: 5vw;
+  }
+} 

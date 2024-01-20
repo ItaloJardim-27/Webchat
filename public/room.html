@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"></script>
+    <script src="../user.js"></script>
+    <script src="client.js"></script>
+    <meta charset="UTF-8">
+</head>
+<html>
+    <body>
+        <div id = "allRoom" class="allRoom" style="display:block;">          
+            <div id="room">
+                <h1 class="welcome" id="welcome">Bem vindo!</h1>
+            
+            <div class="roomBoxParent">
+            <div class="roomBox">
+                <div class="roomBoxTop">
+                    <p class="roomName">Sala de Jogos</p>
+                </div>
+                <div  class="roomBoxBottom">
+                    <a href="#" onclick="roomjoin(1)" class="rooms">JOIN ROOM</a>
+                </div>
+            </div>
+            <div class="roomBox" >
+                <div class="roomBoxTop">
+                    <p class="roomName">Sala de Filmes</p>
+                </div>
+                <div  class="roomBoxBottom">
+                    <a href="#" onclick="roomjoin(2)" class="rooms">JOIN ROOM</a>
+                </div>
+            </div>
+            <div class="roomBox">
+                <div class="roomBoxTop">
+                    <p class="roomName">Sala de Livros</p>
+                </div>
+                <div  class="roomBoxBottom">
+                    <a href="#" onclick="roomjoin(3)" class="rooms">JOIN ROOM</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

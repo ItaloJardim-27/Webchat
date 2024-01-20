@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="chat.css" type="text/css">
+    <meta charset="UTF-8">
+</head>
+<html>
+    <body>
+
+        <div id="signUp" class="signUp"> 
+            <div class="signUpBox">
+               <div class="formTop"> 
+                   <form>
+                       <label class="lblForm" for="userName">Usuário: </label>
+                       <input type="text" name="userName" required class="inputForm" id="userName" style="margin-top: 5vw; width: 27.5vw;"> <br>
+                       <label class="lblForm" for="userName">Senha: </label>
+                       <input type="password" name="userName" required class="inputForm" id="password" style="margin-top: 5vw; width: 29vw;">
+                       <label class="lblForm" for="userName">Data de nascimento: </label>
+                       <input type="date" name="userName" required class="inputForm" id="birthday" style="margin-top: 5vw"><br>
+                       <label class="lblForm" for="userName">Email: </label>
+                       <input type="text" name="userName" required id="email" class="inputForm" style="margin-top: 5vw; width: 29.5vw;">
+                       <label class="lblForm" for="userName">Número: </label>
+                       <input type="tel" name="userName" required class="inputForm"  id="phone" style="margin-top: 5vw; width: 27vw;" 
+                        placeholder="(00) 00000-0000">  
+                   </form>
+               </div>
+               <div class="formBottom">
+                   <button class="btnLogin" id="btnLogin" onclick="createAccount();">Criar conta</button>
+               </div>
+            </div>
+       </div> 
+          <div id="login" class="login"> 
+             <div class="loginBox">
+                <div class="formTop"> 
+                    <form>
+                        <label class="lblForm" for="userName">Usuário: </label>
+                        <input type="text" name="userName" id="userNameLogin" class="inputForm" style="margin-top: 5vw"><br>
+                        <label class="lblForm" for="password">Senha: </label>
+                        <input type="text" name="password" id="passwordLogin" class="inputForm" style="margin-top: 5vw; width: 26vw;">
+                
+                    </form>
+                </div>
+                <div class="formBottom">
+                    <button class="btnLogin" id="btnLogin" onclick="loginAccount();">Entrar</button>
+                    <br><br><a href="#" class="signUpA" onclick="newAccount();">Não tem uma conta? <span style="color: blue;">Criar uma</span></a>
+                </div>
+             </div>
+        </div> 
+        <div id = "allRoom" class="allRoom" style="display:none;">          
+            <div id="room">
+                <h1 class="welcome" id="welcome">Bem vindo!</h1>
+            
+            <div class="roomBoxParent">
+            <div class="roomBox">
+                <div class="roomBoxTop">
+                    <p class="roomName">Sala de Jogos</p>
+                </div>
+                <div  class="roomBoxBottom">
+                    <a href="#" onclick="roomjoin(1)" class="rooms">JOIN ROOM</a>
+                </div>
+            </div>
+            <div class="roomBox" >
+                <div class="roomBoxTop">
+                    <p class="roomName">Sala de Filmes</p>
+                </div>
+                <div  class="roomBoxBottom">
+                    <a href="#" onclick="roomjoin(2)" class="rooms">JOIN ROOM</a>
+                </div>
+            </div>
+            <div class="roomBox">
+                <div class="roomBoxTop">
+                    <p class="roomName">Sala de Livros</p>
+                </div>
+                <div  class="roomBoxBottom">
+                    <a href="#" onclick="roomjoin(3)" class="rooms">JOIN ROOM</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div id="allChat" class="allChat">
+            <div class="top">
+                <div class="top-left">
+                    <img src="pic1.png" alt="profile_pic" id="profilePic">
+                    <p class="name" id="name">Teste</p>
+                </div>
+                <div class="top_right">
+                    <button onclick="roomleave()" class="roomLeave">Sair da sala</button>
+                </div>
+            </div>
+            <div>
+                <div id="canal" class="canal">
+                    <div class="test">  
+                        <div id="chat" class="chat">
+                           </div>
+                           <div class="sending">
+                                <input type="text" id="message" class="textMsg">
+                                <button type="submit" class="send" onclick="send();">ENVIAR</button>  
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+</body>
+</html>
